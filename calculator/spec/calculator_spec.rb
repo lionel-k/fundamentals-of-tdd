@@ -12,17 +12,16 @@ describe Calculator do
 
     it 'returns the sums of 2 random values' do
       calculator = Calculator.new
-      first_value =  Random.rand(1000)
-      second_value =  Random.rand(1000)
+      first_value = Random.rand(1000)
+      second_value = Random.rand(1000)
 
       result = calculator.add(first_value, second_value)
 
       expect(result).to eq(first_value + second_value)
-
     end
   end
 
-  describe '#factorial'  do
+  describe '#factorial' do
     it 'returns 1 for 0!' do
       calc = Calculator.new
 

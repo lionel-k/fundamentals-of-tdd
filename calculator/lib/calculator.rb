@@ -7,7 +7,8 @@ class Calculator
     if value.zero?
       1
     else
-      value * factorial(value - 1)
+      (1..value).reduce(:*)
+      # value * factorial(value - 1)
     end
   end
 end
